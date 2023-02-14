@@ -15,5 +15,92 @@ html{
 
 body{
     font-family: 'Lexend Deca', sans-serif;
-    // font-family: 'Big Shoulders Display', cursive;
+    background-color: $veryLightGray;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(20em, 25em));
+    position: absolute;
+    margin: auto;
+    inset: 0;
+    height: 40em;
+    width: fit-content;
+    .card-common{
+        padding: 4em;
+        display: flex;
+        flex-direction: column;
+        color: $transparentWhite;
+        img{
+            width: 5.5em;
+        }
+        h1{
+            padding-top: 0.8em;
+            font-family: 'Big Shoulders Display', cursive;
+            text-transform: uppercase;
+            font-size: 3.25em;
+        }
+        p{
+            padding-top: 1.7em;
+            line-height: 1.7em;
+            font-size: 1.2em;
+        }
+        a{
+            margin-top: 5.7em;
+            border-radius: 5em;
+            padding: 1em 0;
+            width: 9.75em;
+            font-size: 1.2em;
+            text-decoration: none;
+            text-align: center;
+        }
+        a:hover{
+            background-color: #fff0;
+            color: $transparentWhite;
+            border: 0.2em solid $transparentWhite;
+            padding: 0.83em 0;
+        }
+    }
+    .card-01{
+        background-color: $brightOrange;
+        border-radius: 0.8em 0 0 0.8em;
+        a{
+            background-color: $veryLightGray;
+            color: $brightOrange;
+        }
+    }
+    .card-02{
+        background-color: $darkCyan;
+        a{
+            background-color: $veryLightGray;
+            color: $darkCyan;
+        }
+    }
+    .card-03{
+        background-color: $veryDarkCyan;
+        border-radius: 0 0.8em 0.8em 0;
+        a{
+            background-color: $veryLightGray;
+            color: $veryDarkCyan;   
+        }
+    }
+}
+
+.footer {
+    word-spacing: 0.1em;
+    font-size: 1em;
+    color: $darkCyan;
+    white-space: pre;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+    a {
+      color: $brightOrange;
+      letter-spacing: 0.1em;
+      font-weight: 700;
+    }
 }
