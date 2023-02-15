@@ -84,6 +84,24 @@ body {
   color: hsl(179deg, 100%, 13%);
 }
 
+@media (max-width: 650px) {
+  .container {
+    grid-template-columns: repeat(1, minmax(20em, 27em));
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .container .card-common a {
+    margin-top: 2.3em;
+  }
+  .container .card-01 {
+    border-radius: 0.8em 0.8em 0 0;
+    margin-top: 3em;
+  }
+  .container .card-03 {
+    border-radius: 0 0 0.8em 0.8em;
+    margin-bottom: 3em;
+  }
+}
 .footer {
   word-spacing: 0.1em;
   font-size: 1em;
@@ -102,4 +120,12 @@ body {
   color: hsl(31deg, 77%, 52%);
   letter-spacing: 0.1em;
   font-weight: 700;
+}
+
+@media (max-width: 650px) {
+  .footer {
+    position: sticky;
+    padding-bottom: 0;
+    padding-top: 0.5em;
+  }
 }/*# sourceMappingURL=main-style.css.map */
