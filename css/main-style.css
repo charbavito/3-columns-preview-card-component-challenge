@@ -33,6 +33,7 @@ body {
 }
 .container .card-common img {
   width: 5.5em;
+  height: auto;
 }
 .container .card-common h1 {
   padding-top: 0.8em;
@@ -117,7 +118,7 @@ body {
   flex-wrap: wrap;
 }
 .footer a {
-  color: hsl(31deg, 77%, 52%);
+  color: hsl(179deg, 100%, 13%);
   letter-spacing: 0.1em;
   font-weight: 700;
 }

@@ -32,6 +32,7 @@ body{
         color: $transparentWhite;
         img{
             width: 5.5em;
+            height: auto;
         }
         h1{
             padding-top: 0.8em;
@@ -120,7 +121,7 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     a {
-      color: $brightOrange;
+      color: $veryDarkCyan;
       letter-spacing: 0.1em;
       font-weight: 700;
     }
